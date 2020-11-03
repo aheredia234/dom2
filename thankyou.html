@@ -1,0 +1,22 @@
+<input id="elem" type="button" value="Click me">
+
+<body>
+    <div>
+        <p id = "demo"></p>
+    </div>
+    
+</body>
+
+<script>
+
+var date = new Date();
+    console.log(date);
+    let month = date.getMonth() +1;
+    let day = date.getDay() + 1;
+    let year = date.getFullYear(); 
+    elem.onclick = function() {
+        document.getElementById("demo").innerHTML = 
+        "The date is  " + month  + "/" + day + "/" + year;
+    };    
+</script>
+
